@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8" />
+		<title>Zinouba - Personal Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Template Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+		<!-- Template CSS Files -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/simplebar.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.animatedheadline.css" />
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<!-- CSS Skin File -->
+		<link rel="stylesheet" type="text/css" href="css/skins/yellow.css" />
+
+		<!-- Live Style Switcher - demo only -->
+		<link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+		<link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+		<link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+		<link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+		<link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+		<link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+		<link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+		<link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+		<link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+		<link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+		<link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+		<!-- Template JS Files -->
+		<script src="js/modernizr-custom.js"></script>
+
+	</head>
+	<body>
+		<!-- Preloader Start -->
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+		<!-- Preloader Ends -->
+		<!-- Live Style Switcher Starts - demo only -->
+		<div id="switcher" class="">
+			<div class="content-switcher">
+				<h4>STYLE SWITCHER</h4>
+				<ul>
+					<li>
+						<a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+					</li>
+					<li>
+						<a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+					</li>
+					<li>
+						<a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+					</li>
+					<li>
+						<a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+					</li>
+					<li>
+						<a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+					</li>
+					<li>
+						<a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+					</li>
+					<li>
+						<a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+					</li>
+					<li>
+						<a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+					</li>
+					<li>
+						<a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+					</li>
+					<li>
+						<a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+					</li>
+				</ul>
+				<h4>BODY SKIN</h4>
+
+				<label> <input class="dark_switch" type="radio" name="color_style" id="is_light" value="light" /> Light</label>
+				<label> <input class="dark_switch" type="radio" name="color_style" id="is_dark" value="dark"  checked="checked" />  Dark</label><br>
+
+				<a href="" class="waves-effect waves-light btn font-weight-700 purchase hoverable"><i class="fa fa-shopping-cart"></i> Purchase</a>
+				<div id="hideSwitcher">&times;</div>
+			</div>
+		</div>
+		<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+		<!-- Live Style Switcher Ends - demo only -->
+		<main>
+			<!-- Top Container Starts -->
+			<div class="container-fluid top-container">
+				<div class="row justify-content-center align-items-center">
+					<!-- Main Image Starts -->
+					<div class="col-12 col-md-6 img-wrap mt-5 mb-4 my-md-0">
+						<img class="float-none float-md-right" src="img/picture.jpg" alt="image" />
+					</div>
+					<!-- Main Image Ends -->
+					<!-- Text Animation Starts -->
+					<div class="col-12 col-md-6 mb-5 mb-md-0">
+						<span class="subtitle text-uppercase text-center text-md-left">hi there !</span>
+						<div class="selector" id="selector">
+							<h3 class="ah-headline title text-uppercase text-center text-md-left">I'm
+								<span class="ah-words-wrapper p-0">
+										<b class="is-visible">eric wilson</b>
+										<b>a developer</b>
+										<b>a blogger</b>
+								</span>
+							</h3>
+						</div>
+					</div>
+					<!-- Text Animation Ends -->
+				</div>
+			</div>
+			<!-- Top Container Ends -->
+			<!-- Content Starts -->
+			<div class="fullview">
+				<!-- About Section Starts -->
+				<div class="fullview__item" id="fullview__about" data-simplebar>
+					<div class="container">
+						<h1 class="heading d-none d-md-block"><span>About <span>me</span></span></h1>
+						<div class="section-content">
+							<!-- Personal Informations Starts -->
+							<!-- Main Heading Ends -->
+							<div class="infos">
+								<div class="row personal-info">
+									<!-- Personal Infos Starts -->
+									<div class="d-none d-md-block col-md-12 col-xl-5 col-lg-6 mb-5 mb-lg-0">
+										<div class="image-container">
+											<img class="img-fluid d-block" src="img/picture.jpg"  alt="" />
+										</div>
+									</div>
+									<div class="row col-xl-7 col-lg-6 col-md-12">
+										<div class="col-12">
+											<p class="mt-0 mt-md-3 mt-lg-0">
+												I'm a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications.
+											</p>
+										</div>
+										<div class="col-12 col-sm-6">
+											<ul class="list-1 list-unstyled">
+												<li>
+													<h6><span class="font-weight-600">First Name</span>Eric</h6>
+												</li>
+												<li>
+													<h6><span class="font-weight-600">Last Name</span>Wilson</h6>
+												</li>
+												<li>
+													<h6><span class="font-weight-600">Birthdate</span>21 june 1990</h6>
+												</li>
+												<li>
+													<h6><span class="font-weight-600">Nationality</span>British</h6>
+												</li>
+											</ul>
+										</div>
+										<div class="col-12 col-sm-6">
+											<ul class="list-2 list-unstyled mt-2 mt-sm-0">
+												<li>
+													<h6><span class="font-weight-600">Freelance</span>Available</h6>
+												</li>
+												<li>
+													<h6><span class="font-weight-600">Langages</span>English</h6>
+												</li>
+												<li>
+													<h6><span class="font-weight-600">Phone</span>+34 21 18 40 10</h6>
+												</li>
+												<li>
+													<h6><span class="font-weight-600">Skype</span>eric.wilson</h6>
+												</li>
+											</ul>
+										</div>
+										<div class="col-12 resume-btn-container mt-3">
+											<a href="#" class="btn"><i class="fa fa-download"></i>download my cv</a>
+										</div>
+									</div>
+									<!-- Personal Infos Ends -->
+								</div>
+							</div>
+							<!-- Personal Informations Ends -->
+							<div class="separator separator-achievements"><span>achievements</span></div>
+							<!-- Fun Facts Starts -->
+							<div class="badges">
+								<div class="container">
+								<div class="row">
+									<!-- Fact Badge Item Starts -->
+									<div class="col-12 col-sm-4 text-center mb-5 mb-sm-0">
+										<h1>
+											<i class="fa fa-suitcase"></i>
+											<span>9+</span>
+										</h1>
+										<h6>Years Experience</h6>
+									</div>
+									<!-- Fact Badge Item Ends -->
+									<!-- Fact Badge Item Starts -->
+									<div class="col-12 col-sm-4 text-center mb-5 mb-sm-0">
+										<h1>
+											<i class="fa fa-check-square"></i>
+											<span>57+</span>
+										</h1>
+										<h6>Done Projects</h6>
+									</div>
+									<!-- Fact Badge Item Ends -->
+									<!-- Fact Badge Item Starts -->
+									<div class="col-12 col-sm-4 text-center">
+										<h1>
+											<i class="fa fa-heart"></i>
+											<span class="font-weight-700">34+</span>
+										</h1>
+										<h6>Happy customers</h6>
+									</div>
+									<!-- Fact Badge Item Ends -->
+								</div>
+								</div>
+							</div>
+							<!-- Fun Facts Ends -->
+							<div class="separator separator-skills"><span>skills</span></div>
+							<div class="skills">
+								<!-- Skills Starts -->
+								<div class="row">
+									<div class="col-12 col-sm-6">
+										<span class="skill-text">html</span>
+										<div class="chart-bar">
+											<span class="item-progress" data-percent="80" style="width: 80%;"></span>
+											<span class="percent" style="right: 20%">80%</span>
+										</div>
+									</div>
+									<!-- Skill Bar Ends -->
+									<!-- Skill Bar Starts -->
+									<div class="col-12 col-sm-6">
+										<span class="skill-text">javascript</span>
+										<div class="chart-bar">
+											<span class="item-progress" data-percent="60" style="width: 60%;"></span>
+											<span class="percent" style="right: 40%">60%</span>
+										</div>
+									</div>
+									<!-- Skill Bar Ends -->
+									<!-- Skill Bar Starts -->
+									<div class="col-12 col-sm-6">
+										<span class="skill-text">css</span>
+										<div class="chart-bar">
+											<span class="item-progress" data-percent="75" style="width: 75%;"></span>
+											<span class="percent" style="right: 25%">75%</span>
+										</div>
+									</div>
+									<!-- Skill Bar Ends -->
+									<!-- Skill Bar Starts -->
+									<div class="col-12 col-sm-6">
+										<span class="skill-text">jquery</span>
+										<div class="chart-bar">
+											<span class="item-progress" data-percent="65" style="width: 65%;"></span>
+											<span class="percent" style="right: 35%">65%</span>
+										</div>
+									</div>
+									<!-- Skill Bar Ends -->
+									<!-- Skill Bar Starts -->
+									<div class="col-12 col-sm-6">
+										<span class="skill-text">wordpress</span>
+										<div class="chart-bar">
+											<span class="item-progress" data-percent="90" style="width: 90%;"></span>
+											<span class="percent" style="right: 10%">90%</span>
+										</div>
+									</div>
+									<!-- Skill Bar Ends -->
+									<!-- Skill Bar Starts -->
+									<div class="col-12 col-sm-6">
+										<span class="skill-text">angular js</span>
+										<div class="chart-bar">
+											<span class="item-progress" data-percent="85" style="width: 85%;"></span>
+											<span class="percent" style="right: 15%">85%</span>
+										</div>
+									</div>
+									<!-- Skill Bar Ends -->
+									<!-- Skill Bar Starts -->
+									<div class="col-12 col-sm-6">
+										<span class="skill-text">illustrator</span>
+										<div class="chart-bar">
+											<span class="item-progress" data-percent="60" style="width: 60%;"></span>
+											<span class="percent" style="right: 40%">60%</span>
+										</div>
+									</div>
+									<!-- Skill Bar Ends -->
+									<!-- Skill Bar Starts -->
+									<div class="col-12 col-sm-6">
+										<span class="skill-text">after effects</span>
+										<div class="chart-bar">
+											<span class="item-progress" data-percent="75" style="width: 75%;"></span>
+											<span class="percent" style="right: 25%">75%</span>
+										</div>
+									</div>
+									<!-- Skill Bar Ends -->
+								</div>
+								<!-- Skills Starts -->
+							</div>
+							<div class="separator separator-testimonials"><span>testimonials</span></div>
+							<!-- TESTIMONIALS -->
+							<div class="testimonials">
+								<div class="container">
+									<div class="row">
+										<div class="w-100">
+											<div id="customers-testimonials" class="testimonials owl-carousel">
+												<!--Testimonial Starts -->
+												<div class="item position-relative">
+													<img class="rounded-circle d-inline-block" src="img/testimonials/testimonial-1.jpg" alt="testimonial">
+													<h6 class="d-inline-block text-uppercase">Lisa Hale<span class="d-block text-capitalize">web designer</span></h6>
+													<p>Eric is a talented and extremely creative writer and thinker. From drafting engaging sales collateral to producing company videos that captured our energy.</p>
+													<i class="fa fa-quote-right position-absolute"></i>
+												</div>
+												<!--Testimonial Ends -->
+												<!--Testimonial Starts -->
+												<div class="item position-relative">
+													<img class="rounded-circle d-inline-block" src="img/testimonials/testimonial-2.jpg" alt="testimonial">
+													<h6 class="d-inline-block text-uppercase">Mario Verratti<span class="d-block text-capitalize">writer</span></h6>
+													<p>Eric adds tremendous value working either individually or in a team framework. he is a talented writer who is bright and highly motivated</p>
+													<i class="fa fa-quote-right position-absolute"></i>
+												</div>
+												<!--Testimonial Ends -->
+												<!--Testimonial Starts -->
+												<div class="item position-relative">
+													<img class="rounded-circle d-inline-block" src="img/testimonials/testimonial-3.jpg" alt="testimonial">
+													<h6 class="d-inline-block text-uppercase">Lucy Karera<span class="d-block text-capitalize">director</span></h6>
+													<p>First time we worked together, Eric came up with several on-target creative concepts under significant deadline pressure. he's a very creative person.</p>
+													<i class="fa fa-quote-right position-absolute"></i>
+												</div>
+												<!--Testimonial Ends -->
+												<!--Testimonial Starts -->
+												<div class="item position-relative">
+													<img class="rounded-circle d-inline-block" src="img/testimonials/testimonial-4.jpg" alt="testimonial">
+													<h6 class="d-inline-block text-uppercase">Alfonso Pérez<span class="d-block text-capitalize">ui/ux designer</span></h6>
+													<p>If you have the opportunity to work with Eric, I say go for it! You are guaranteed an enjoyable and productive experience. he is skilled at what he does.</p>
+													<i class="fa fa-quote-right position-absolute"></i>
+												</div>
+												<!--Testimonial Ends -->
+												<!--Testimonial Starts -->
+												<div class="item position-relative">
+													<img class="rounded-circle d-inline-block" src="img/testimonials/testimonial-5.jpg" alt="testimonial">
+													<h6 class="d-inline-block text-uppercase">Alexis Dana<span class="d-block text-capitalize">ceo</span></h6>
+													<p>I’ve worked with Eric for about 5 years, he have built and maintained many websites for clients of mine. his communication, his knowledge is unbeatable.</p>
+													<i class="fa fa-quote-right position-absolute"></i>
+												</div>
+												<!--Testimonial Ends -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END OF TESTIMONIALS -->
+						</div>
+					</div>
+				</div>
+				<!-- About Section Ends -->
+				<!-- Portfolio Section Starts -->
+				<div class="fullview__item" id="fullview__portfolio" data-simplebar>
+					<h1 class="heading heading-portfolio"><span>my <span>works</span></span></h1>
+					<div class="container portfolio-container">
+						<!-- ¨Portfolio Items Starts -->
+						<div class="grid row w-100 m-0 text-left">
+							<!-- ¨Portfolio Item Starts -->
+							<div class="grid__item col-12 col-md-6 col-lg-4" data-size="1280x1024">
+								<a class="d-block" href="img/projects/2.jpg">
+									<!-- ¨Project Main Image Starts -->
+									<img class="img-fluid" src="img/projects/2.jpg" alt="img06" />
+									<!-- ¨Project Main Image Ends -->
+									<!-- ¨Project Details Starts -->
+									<div class="description description--grid">
+										<h3>Project 1</h3>
+										<div class="details">
+											<ul class="list-unstyled">
+												<li><span><i class="fa fa-file-text-o"></i>project : </span><span>Website</span></li>
+												<li><span><i class="fa fa-user-o"></i>client : </span><span>TemplateMonster</span></li>
+												<li><span><i class="fa fa-code"></i>langages : </span><span>html, css, js</span></li>
+												<li><span><i class="fa fa-hourglass-o"></i>duration : </span><span>3 months</span></li>
+												<li><span><i class="fa fa-money"></i>budget : </span><span>$33000</span></li>
+											</ul>
+										</div>
+									</div>
+									<!-- ¨Project Details Ends -->
+								</a>
+							</div>
+							<!-- ¨Portfolio Item Ends -->
+							<!-- ¨Portfolio Item Starts -->
+							<div class="grid__item col-12 col-md-6 col-lg-4" data-size="1280x828">
+								<a class="d-block" href="img/projects/4.jpg">
+									<!-- ¨Project Main Image Starts -->
+									<img class="img-fluid" src="img/projects/4.jpg" alt="img06" />
+									<!-- ¨Project Main Image Ends -->
+									<!-- ¨Project Details Starts -->
+									<div class="description description--grid">
+										<h3>Project 2</h3>
+										<div class="details">
+											<ul class="list-unstyled">
+												<li><span><i class="fa fa-file-text-o"></i>project : </span><span>Mobile App</span></li>
+												<li><span><i class="fa fa-user-o"></i>client : </span><span>TemplateMonster</span></li>
+												<li><span><i class="fa fa-code"></i>langages : </span><span>Laravel</span></li>
+												<li><span><i class="fa fa-hourglass-o"></i>duration : </span><span>6 weeks</span></li>
+												<li><span><i class="fa fa-money"></i>budget : </span><span>$14000</span></li>
+											</ul>
+										</div>
+									</div>
+									<!-- ¨Project Details Ends -->
+								</a>
+							</div>
+							<!-- ¨Portfolio Item Ends -->
+							<!-- ¨Portfolio Item Starts -->
+							<div class="grid__item col-12 col-md-6 col-lg-4" data-size="1280x1919">
+								<a class="d-block" href="img/projects/3.jpg">
+									<!-- ¨Project Main Image Starts -->
+									<img class="img-fluid" src="img/projects/3.jpg" alt="img06" />
+									<!-- ¨Project Main Image Ends -->
+									<!-- ¨Project Details Starts -->
+									<div class="description description--grid">
+										<h3>Project 3</h3>
+										<div class="details">
+											<ul class="list-unstyled">
+												<li><span><i class="fa fa-file-text-o"></i>project : </span><span>Back Office</span></li>
+												<li><span><i class="fa fa-user-o"></i>client : </span><span>TemplateMonster</span></li>
+												<li><span><i class="fa fa-code"></i>langages : </span><span>Java, Spring</span></li>
+												<li><span><i class="fa fa-hourglass-o"></i>duration : </span><span>2 years</span></li>
+												<li><span><i class="fa fa-money"></i>budget : </span><span>$155000</span></li>
+											</ul>
+										</div>
+									</div>
+									<!-- ¨Project Details Ends -->
+								</a>
+							</div>
+							<!-- ¨Portfolio Item Ends -->
+							<!-- ¨Portfolio Item Starts -->
+							<div class="grid__item col-12 col-md-6 col-lg-4" data-size="1280x1920">
+								<a class="d-block" href="img/projects/8.jpg">
+									<!-- ¨Project Main Image Starts -->
+									<img class="img-fluid" src="img/projects/8.jpg" alt="img06" />
+									<!-- ¨Project Main Image Ends -->
+									<!-- ¨Project Details Starts -->
+									<div class="description description--grid">
+										<h3>Project 4</h3>
+										<div class="details">
+											<ul class="list-unstyled">
+												<li><span><i class="fa fa-file-text-o"></i>project : </span><span>Wordpress theme</span></li>
+												<li><span><i class="fa fa-user-o"></i>client : </span><span>TemplateMonster</span></li>
+												<li><span><i class="fa fa-code"></i>langages : </span><span>Php, Angular</span></li>
+												<li><span><i class="fa fa-hourglass-o"></i>duration : </span><span>15 days</span></li>
+												<li><span><i class="fa fa-money"></i>budget : </span><span>$890</span></li>
+											</ul>
+										</div>
+									</div>
+									<!-- ¨Project Details Ends -->
+								</a>
+							</div>
+							<!-- ¨Portfolio Item Ends -->
+							<!-- ¨Portfolio Item Starts -->
+							<div class="grid__item col-12 col-md-6 col-lg-4" data-size="1280x1920">
+								<a class="d-block" href="img/projects/5.jpg">
+									<!-- ¨Project Main Image Starts -->
+									<img class="img-fluid" src="img/projects/5.jpg" alt="img06" />
+									<!-- ¨Project Main Image Ends -->
+									<!-- ¨Project Details Starts -->
+									<div class="description description--grid">
+										<h3>Project 5</h3>
+										<div class="details">
+											<ul class="list-unstyled">
+												<li><span><i class="fa fa-file-text-o"></i>project : </span><span>Video</span></li>
+												<li><span><i class="fa fa-user-o"></i>client : </span><span>TemplateMonster</span></li>
+												<li><span><i class="fa fa-code"></i>langages : </span><span>After Effects</span></li>
+												<li><span><i class="fa fa-hourglass-o"></i>duration : </span><span>1 month</span></li>
+												<li><span><i class="fa fa-money"></i>budget : </span><span>$780</span></li>
+											</ul>
+										</div>
+									</div>
+									<!-- ¨Project Details Ends -->
+								</a>
+							</div>
+							<!-- ¨Portfolio Item Ends -->
+							<!-- ¨Portfolio Item Starts -->
+							<div class="grid__item col-12 col-md-6 col-lg-4" data-size="1280x1925">
+								<a class="d-block" href="img/projects/6.jpg">
+									<!-- ¨Project Main Image Starts -->
+									<img class="img-fluid" src="img/projects/6.jpg" alt="img06" />
+									<!-- ¨Project Main Image Ends -->
+									<!-- ¨Project Details Starts -->
+									<div class="description description--grid">
+										<h3>Project 6</h3>
+										<div class="details">
+											<ul class="list-unstyled">
+												<li><span><i class="fa fa-file-text-o"></i>project : </span><span>Flyer</span></li>
+												<li><span><i class="fa fa-user-o"></i>client : </span><span>TemplateMonster</span></li>
+												<li><span><i class="fa fa-code"></i>langages : </span><span>Photoshop</span></li>
+												<li><span><i class="fa fa-hourglass-o"></i>duration : </span><span>5 days</span></li>
+												<li><span><i class="fa fa-money"></i>budget : </span><span>$650</span></li>
+											</ul>
+										</div>
+									</div>
+									<!-- ¨Project Details Ends -->
+								</a>
+							</div>
+							<!-- ¨Portfolio Item Ends -->
+							<!-- ¨Portfolio Item Starts -->
+							<div class="grid__item col-12 col-md-6 col-lg-4" data-size="1280x851">
+								<a class="d-block" href="img/projects/1.jpg">
+									<!-- ¨Project Main Image Starts -->
+									<img class="img-fluid" src="img/projects/1.jpg" alt="img06" />
+									<!-- ¨Project Main Image Ends -->
+									<!-- ¨Project Details Starts -->
+									<div class="description description--grid">
+										<h3>Project 7</h3>
+										<div class="details">
+											<ul class="list-unstyled">
+												<li><span><i class="fa fa-file-text-o"></i>project : </span><span>3d object</span></li>
+												<li><span><i class="fa fa-user-o"></i>client : </span><span>TemplateMonster</span></li>
+												<li><span><i class="fa fa-code"></i>langages : </span><span>3ds max</span></li>
+												<li><span><i class="fa fa-hourglass-o"></i>duration : </span><span>10 months</span></li>
+												<li><span><i class="fa fa-money"></i>budget : </span><span>$15000</span></li>
+											</ul>
+										</div>
+									</div>
+									<!-- ¨Project Details Ends -->
+								</a>
+							</div>
+							<!-- ¨Portfolio Item Ends -->
+							<!-- ¨Portfolio Item Starts -->
+							<div class="grid__item col-12 col-md-6 col-lg-4" data-size="1280x851">
+								<a class="d-block" href="img/projects/7.jpg">
+									<!-- ¨Project Main Image Starts -->
+									<img class="img-fluid" src="img/projects/7.jpg" alt="img06" />
+									<!-- ¨Project Main Image Ends -->
+									<!-- ¨Project Details Starts -->
+									<div class="description description--grid">
+										<h3>Project 8</h3>
+										<div class="details">
+											<ul class="list-unstyled">
+												<li><span><i class="fa fa-file-text-o"></i>project : </span><span>Logo</span></li>
+												<li><span><i class="fa fa-user-o"></i>client : </span><span>TemplateMonster</span></li>
+												<li><span><i class="fa fa-code"></i>langages : </span><span>Sketch</span></li>
+												<li><span><i class="fa fa-hourglass-o"></i>duration : </span><span>1 day</span></li>
+												<li><span><i class="fa fa-money"></i>budget : </span><span>$50</span></li>
+											</ul>
+										</div>
+									</div>
+									<!-- ¨Project Details Ends -->
+								</a>
+							</div>
+							<!-- ¨Portfolio Item Ends -->
+						</div>
+						<!-- ¨Portfolio Items Ends -->
+						<!-- ¨Close Portfolio Item Starts -->
+						<div class="preview">
+							<button class="action action--close"><img src="img/projects/back-portfolio.png" alt="back"></button>
+							<div class="description description--preview"></div>
+						</div>
+						<!-- ¨Close Portfolio Item Ends -->
+					</div>
+				</div>
+				<!-- Portfolio Section Ends -->
+				<!-- Contact Section Starts -->
+				<div class="fullview__item" id="fullview__contact" data-simplebar>
+					<div class="container">
+						<h1 class="heading heading-contact"><span>contact <span>me</span></span></h1>
+						<div class="container">
+							<!-- Contact Info Starts -->
+							<div class="row text-center">
+								<div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+									<div class="contact-box">
+										<i class="fa fa-phone"></i>
+										<span>Phone</span>
+										<p>+216 21 184 010</p>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+									<div class="contact-box">
+										<i class="fa fa-at"></i>
+										<span>Email</span>
+										<p>you@yourmail.com</p>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-lg-3 mb-5 mb-sm-0">
+									<div class="contact-box">
+										<i class="fa fa-map-marker"></i>
+										<span>Address</span>
+										<p>London, England</p>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-lg-3">
+									<div class="contact-box">
+										<i class="fa fa-share-alt"></i>
+										<span>Follow me</span>
+										<ul class="list-unstyled m-0 p-0">
+											<li><a href="#"> <i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"> <i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"> <i class="fa fa-github"></i></a></li>
+											<li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
+											<li><a href="#"> <i class="fa fa-behance"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Contact Info Ends -->
+							<div class="separator"><span>drop me an email</span></div>
+							<!-- Contact Form Starts -->
+							<div class="row contact">
+								<form class="contactform" method="post" action="php/process-form.php">
+									<div class="contactform">
+										<div class="row">
+											<div class="col-12 col-md-4">
+												<input type="text" name="name" placeholder="YOUR NAME" autocomplete="off">
+											</div>
+											<div class="col-12 col-md-4">
+												<input type="email" name="email" placeholder="YOUR EMAIL" autocomplete="off">
+											</div>
+											<div class="col-12 col-md-4">
+												<input type="text" name="subject" placeholder="YOUR SUBJECT" autocomplete="off">
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+												<button type="submit" class="btn"><i class="fa fa-send"></i> Send Message</button>
+											</div>
+											<div class="col-12 form-message">
+												<span class="output_message text-center font-weight-600 text-uppercase"></span>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<!-- Contact Form Ends -->
+						</div>
+					</div>
+				</div>
+				<!-- Contact Section Ends -->
+			</div>
+			<!-- Content Ends -->
+			<!-- Revealer Starts -->
+			<div class="revealer"></div>
+			<!-- Revealer Ends -->
+			<!-- Menu Starts -->
+			<div class="grid grid--thumbs">
+				<!-- About Menu Item Starts -->
+				<div class="grid__item" id="about">
+					<div class="grid__item-imgwrap">
+						<div class="page-title">
+							<h2>
+								<span data-hover="About">About</span>
+								<span data-hover="Me">Me</span>
+							</h2>
+						</div>
+					</div>
+				</div>
+				<!-- About Menu Item Ends -->
+				<!-- Portfolio Menu Item Starts -->
+				<div class="grid__item" id="portfolio">
+					<div class="grid__item-imgwrap">
+						<div class="page-title">
+							<h2>
+								<span data-hover="my">my</span>
+								<span data-hover="works">works</span>
+							</h2>
+						</div>
+					</div>
+				</div>
+				<!-- Portfolio Menu Item Ends -->
+				<!-- Contact Menu Item Starts -->
+				<div class="grid__item" id="contact">
+					<div class="grid__item-imgwrap">
+						<div class="page-title">
+							<h2>
+								<span data-hover="contact">contact</span>
+								<span data-hover="me">me</span>
+							</h2>
+						</div>
+					</div>
+				</div>
+				<!-- Contact Menu Item Ends -->
+				<!-- Social Media & Back Toggle Starts -->
+				<div class="grid__item grid__item--more">
+					<div class="grid__toggle">
+						<!-- Social Media Starts -->
+						<span class="grid__toggle-inner grid__toggle-more">
+							<a href="#"> <i class="fa fa-facebook"></i></a>
+							<a href="#"> <i class="fa fa-twitter"></i></a>
+							<a href="#"> <i class="fa fa-github"></i></a>
+						</span>
+						<!-- Social Media Ends -->
+						<!-- Back Toggle Starts -->
+						<span class="grid__toggle-inner grid__toggle-back" id="grid__toggle-back">
+							<span class="grid__toggle-text"><img src="img/close-button.png" alt="close"/></span>
+						</span>
+						<!-- Back Toggle Ends -->
+					</div>
+				</div>
+				<!-- Social Media & Back Toggle Ends -->
+			</div>
+			<!-- Menu Ends -->
+			<!-- Mobile Menu Starts -->
+			<div class="mobile-menu d-block d-md-none">
+				<nav id="singlepage-nav">
+					<ul class="list-unstyled m-0 p-0">
+						<li>
+							<a href="#fullview__about">About</a>
+						</li>
+						<li>
+							<a href="#fullview__portfolio">Portfolio</a>
+						</li>
+						<li>
+							<a href="#fullview__contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- Mobile Menu Ends -->
+		</main>
+
+		<!-- Template JS Files -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/simplebar.min.js"></script>
+		<script src="js/jquery.animatedheadline.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/styleswitcher.js"></script>
+		<script src="js/custom.js"></script>
+
+	</body>
+</html>

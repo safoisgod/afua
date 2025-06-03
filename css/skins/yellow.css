@@ -1,0 +1,55 @@
+/* =================================================================== */
+/* YELLOW #ffb400
+====================================================================== */
+.ah-words-wrapper,
+.page-title h2 span,
+.page-title h2 span:first-child::before,
+.badges h1 span,
+.contact-box > i,
+.description h3,
+.testimonials .owl-item i,
+.grid__toggle-more a:hover,
+body.light .grid__toggle-more a:hover,
+.contact-box ul li a:hover,
+body.light .contact-box ul li a:hover,
+body.light .chart-bar>.percent,
+.blog .post-content .entry-header h3 a:hover,
+body.light.blog .post-content .entry-header h3 a:hover,
+.blog-post .meta i,
+.mobile-menu nav ul li a.current,
+body.light .mobile-menu nav ul li a.current {
+    color: #ffb400;
+}
+@media screen and (max-width: 767px) {
+    .heading > span span {
+        color: #ffb400;
+    }
+}
+.btn,
+.chart-bar>.item-progress,
+.heading span:before,
+.heading span:after,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+body.light .revealer,
+body.light .heading,
+.page-item.active .page-link,
+.blog .page-link:hover,
+body.light.blog .page-link:hover,
+body.light .page-item.active .page-link{
+    background-color: #ffb400;
+}
+.personal-info .image-container:before {
+    border: 2px solid #ffb400;
+}
+body.light .heading:after {
+    border-top-color: #ffb400;
+}
+.page-item.active .page-link,
+.contact .contactform input[type=text]:focus,
+.contact .contactform input[type=email]:focus,
+.contact .contactform textarea:focus,
+body.light .contact .contactform input[type=text]:focus,
+body.light .contact .contactform input[type=email]:focus,
+body.light .contact .contactform textarea:focus{
+    border: 1px solid #ffb400;
+}
